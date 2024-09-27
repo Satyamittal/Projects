@@ -17,5 +17,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "name": "frontened",
+  "version": "1.0.0",
+  "description": "Frontened folder for bookNest",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyamittal/Projects.git"
+  },
+  "author": "Satyam Mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyamittal/Projects/issues"
+  },
+  "homepage": "https://github.com/Satyamittal/Projects#readme"
 }
