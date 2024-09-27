@@ -5,7 +5,7 @@
             - .input
             - .button
         - .h3
-        - .arrayofBooks
+        - .arrayofBooks 
 */
 
 .bcontainer
@@ -31,14 +31,32 @@
 }
 .form
 {
-    border: 2px solid red;
     padding: 2%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+        /* Blur Effect */
+        position: relative;                        /* Make it relative for absolute positioning of the pseudo-element */
+        border-radius: 10px;                      /* Rounded corners */
+        overflow: hidden;                         /* Hide the overflow */
+        z-index: 1;  
 }
+.form::before {
+    content: "";                               /* Required for pseudo-elements */
+    position: absolute;                        /* Position absolutely within the container */
+    top: 0;                                    /* Stretch to the top */
+    left: 0;                                   /* Stretch to the left */
+    right: 0;                                  /* Stretch to the right */
+    bottom: 0;                                 /* Stretch to the bottom */
+    background-color: rgba(187, 65, 65, 0.01); /* Optional: Slight tint */
+    background-color: inherit;
+    backdrop-filter: blur(10px);              /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);      /* Safari support */
+    z-index: -1;                              /* Position behind the content */
+  }
 .input
 {
     display: block;
@@ -63,18 +81,24 @@
 .button
 {
     width: 15%;
-    height: 4%;
+    height: 6%;
     
     min-width: 150px ;
     min-height: 25px;
 
-    border: 2px solid red;
-    border-radius: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+
+    border: none;
+    background-color: burlywood;
 }
 .button:hover
 {
-    background-color: rgb(15, 240, 15);
-    transition: background-color 1s ease 0.5s;
+    background-color: rgba(156, 40, 11, 0.701);
+    transition: background-color 1s ease;
+
 }
 .bookForm
 {

@@ -14,24 +14,42 @@
     display: flex;
     flex-direction: column;
 
-    border: 2px solid black;
+    border: 2px solid white;
 
     height: 30%;
     width: 43%;
     min-width: 500px;
     min-height: 200px;
 
-    margin: 50px;
+    margin: 30px;
+
+            /* Blur Effect */
+            position: relative;                        /* Make it relative for absolute positioning of the pseudo-element */
+            border-radius: 10px;                      /* Rounded corners */
+            overflow: hidden;                         /* Hide the overflow */
+            z-index: 1;  
+}
+.form::before
+{
+    content: "";                               /* Required for pseudo-elements */
+    position: absolute;                        /* Position absolutely within the container */
+    top: 0;                                    /* Stretch to the top */
+    left: 0;                                   /* Stretch to the left */
+    right: 0;                                  /* Stretch to the right */
+    bottom: 0;                                 /* Stretch to the bottom */
+    background-color: rgba(187, 65, 65, 0.5); /* Optional: Slight tint */
+    background-color: inherit;
+    backdrop-filter: blur(10px);              /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);      /* Safari support */
+    z-index: -1;    
 }
 .upper
 {
     flex-grow: 2;
     display: flex;
-    border: 2px solid black;
 }
 .image
 {
-    border: 2px solid black;
     flex-grow: 1;
 
     display: flex;
@@ -39,10 +57,31 @@
     align-items: center;
 
     color: white;
+
+        /* Blur Effect */
+        position: relative;                        /* Make it relative for absolute positioning of the pseudo-element */
+        border-radius: 10px;                      /* Rounded corners */
+        overflow: hidden;                         /* Hide the overflow */
+        z-index: 1;  
 }
+.image::before{
+    content: "";                               /* Required for pseudo-elements */
+    position: absolute;                        /* Position absolutely within the container */
+    top: 0;                                    /* Stretch to the top */
+    left: 0;                                   /* Stretch to the left */
+    right: 0;                                  /* Stretch to the right */
+    bottom: 0;                                 /* Stretch to the bottom */
+    background-color: rgba(187, 65, 65, 0.1); /* Optional: Slight tint */
+    background-color: inherit;
+    backdrop-filter: blur(10px);              /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);      /* Safari support */
+    z-index: -1;     
+}
+
 .cross
 {
     border: 2px solid black;
+    border-top-right-radius: 8px;
     height: 14%;
     width: 5%;
 
@@ -92,7 +131,16 @@
 
     display: flex;
     justify-content: center;
+
+    color: white;
+
 }
+.lower:hover
+{
+    background-color: rgb(0, 64, 255);
+    transition: background-color 0.4s ease 0.5s;
+}
+
 .lowerPlus
 {
     display: inline;
