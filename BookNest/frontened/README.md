@@ -1,17 +1,17 @@
 ### `Frontflow`
 
-- #### To use this package at max.
-```bash
-npm init
-```
-- #### Download & install frontflow.
+- #### 1. Download & install frontflow.
 ```bash
 npm i frontflow
 ```
-- #### Make files like `.gitignore` & choose ES-6 syntax.`type` : `module`. Cut Readme file.
-- #### To run react server . Use command
+- #### 2. Make files like `.gitignore` & choose ES-6 syntax.`type` : `module`. Cut Readme file.
+- #### 3. To use this package at max. Without adding git repository.
 ```bash
-npm run react-dev
+npm init
+```
+- #### To run react server. First add script in package.json file `start: react-scripts start`
+```bash
+npm start
 ```
 
 <hr/>
