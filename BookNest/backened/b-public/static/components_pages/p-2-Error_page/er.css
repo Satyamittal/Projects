@@ -1,0 +1,13 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://cdn.dribbble.com/users/42048/screenshots/8350927/media/23289b76ac7353ad4f0d0619ce6e9f2d.gif');    
+}
+h2
+{
+    border: 2px solid black;
+    background-color: yellow;
+}

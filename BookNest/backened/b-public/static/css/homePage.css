@@ -1,0 +1,19 @@
+body
+{
+    height: 97% ;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('http://ts2.mm.bing.net/th?id=OIP.tB7197ijqFBaEPMhZ4F2XgHaEo&pid=15.1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h2
+{
+    font-size: 80px;
+    color: Red;
+}
