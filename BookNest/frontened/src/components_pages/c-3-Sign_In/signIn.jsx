@@ -10,7 +10,7 @@ export function SignIn() {
               <input placeholder='Email'className={signIn.input}></input> 
               <input placeholder='Password' className={signIn.input}></input> 
               <button className={signIn.button}>Submit</button>
-              <h3 className={signIn.h3}>New User ? <a href="">Sign Up</a></h3>
+              <h3 className={signIn.h3}>New User ? <a href="/signUp">Sign Up</a></h3>
            </form>
       </div>
     </>

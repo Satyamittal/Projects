@@ -21,6 +21,8 @@ npm start
 ![altImage](./src/images/px-1.jpeg)
 - #### 2. Lets first make `formPage`.
     - #### First we make SignIn component & css module.
+    - #### Then we make Sign Up component & book card component.
+    
 
 <hr/>
 
