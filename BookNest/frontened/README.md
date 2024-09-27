@@ -1,4 +1,4 @@
-### `Frontflow`
+### `Frontflow Environment setting`
 
 - #### 1. Download & install frontflow.
 ```bash
@@ -13,6 +13,14 @@ npm init
 ```bash
 npm start
 ```
+<hr/>
+
+#### `Steps to make this application`
+
+- #### 1. First make the design of application in your copy with pen. Upload it to here in this folder.
+![altImage](./src/images/px-1.jpeg)
+- #### 2. Lets first make `formPage`.
+    - #### First we make SignIn component & css module.
 
 <hr/>
 
