@@ -1,0 +1,17 @@
+.flexBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.container
+{
+    background-image: url('https://www.bing.com/th/id/OGC.cf3940ad2471c84ed672f112f81b2684?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f3603415%2fscreenshots%2f10471601%2fmedia%2fabcd405d9c577fe5a252d485589681e0.gif&ehk=ZUYc18MQDwhn54WJvQ90cpP%2bCUs75M4rKl9Sj%2fsEgkE%3d');
+    height: 60%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
