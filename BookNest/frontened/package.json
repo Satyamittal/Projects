@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "frontflow": "^0.0.9"
+    "frontflow": "^0.0.9",
+    "react-router-dom": "^6.26.2"
   },
   "type": "module",
   "name": "frontened",
   "version": "1.0.0",
   "description": "- #### To use this package at max. ```bash npm init ``` - #### Download & install frontflow. ```bash npm i frontflow ``` - #### Make files like `.gitignore` & choose ES-6 syntax.`type` : `module`. Cut Readme file. - #### To run react server . Use command ```bash npm run react-dev ```",
   "main": "./src/index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start"
