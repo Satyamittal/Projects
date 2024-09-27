@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "frontflow": "^0.0.9"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "name": "frontened",
+  "version": "1.0.0",
+  "description": "- #### To use this package at max. ```bash npm init ``` - #### Download & install frontflow. ```bash npm i frontflow ``` - #### Make files like `.gitignore` & choose ES-6 syntax.`type` : `module`. Cut Readme file. - #### To run react server . Use command ```bash npm run react-dev ```",
+  "main": "./src/index.js",
+  "devDependencies": {},
+  "author": "Satyam Mittal",
+  "license": "ISC"
+}
