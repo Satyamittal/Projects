@@ -1,0 +1,51 @@
+.header
+{
+    border: 2px solid black;
+    height: 10%;
+    min-height: 80px;
+
+    background-color: ad6a6c;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.button
+{
+    border-radius: 6px;    
+    border: none;
+
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 600;
+
+    height: 35%;
+    width: 10%;
+    min-height: 35px;
+
+}
+.buy
+{
+    background-color: green;
+}
+.sell
+{
+    background-color: red;
+}
+.logout
+{
+    background-color: orange;
+}
+.search
+{
+    height: 40%;
+    width: 20%;
+    border-radius: 10px;
+    min-width: 200px;
+
+}
+.image
+{
+    height: 100%;
+}
