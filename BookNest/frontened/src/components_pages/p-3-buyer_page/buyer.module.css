@@ -1,1 +1,16 @@
 /* Page module.css */
+.container
+{
+    background-image: url('https://i.pinimg.com/originals/23/b2/63/23b2639df4b60bac2f7c030a79b4a0a6.jpg');
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    background-color: rgb(14, 234, 14);
+}
