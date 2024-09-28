@@ -51,6 +51,8 @@
 .image
 {
     flex-grow: 1;
+    max-width: 150px;
+    max-height: 170px;
 
     display: flex;
     justify-content: center;
@@ -146,5 +148,16 @@
     display: inline;
     margin: 0;
 }
+.fileInput
+{
+    width: 15px;
+    border: none;
+    background-color: inherit;
 
+}
+.fileInput::placeholder
+{
+    color: white;
+    font-size: x-large;
 
+}
