@@ -9,32 +9,40 @@ export const router = express.Router();
 // create class to use non-static functions
 const homeController = new HomeController() ;
 
+router.get('/',(req,res,next)=>
+{
+    console.log('I am here ' );
+    const err = {
+        message : "Error in routing file" ,
+        code : 404 
+    }
+    // nonExistentFunction();
+    homeController.homePageServe(req,res,next) ;
+})
 
-try
+// Email & password are recieved & verified by this route
+router.post('/',(req,res,next)=>
 {
-    router.get('/',(req,res,next)=>
-        {
-            console.log('I am here ' );
-            const err = {
-                message : "Error in routing file" ,
-                code : 404 
-            }
-            // nonExistentFunction();
-            homeController.homePageServe(req,res,next) ;
-        })
-    router.get('/dynamo',(req,res,next)=>
-    {
-        homeController.dynamicPageServe(req,res,next) ;
-    })
-    router.get('/:id',(req,res,next)=>
-    {
-        homeController.dynamicPageServe2(req,res,next) ;
-    })
-}
-catch(err)
+    homeController.verifyUser(req,res,next) ;
+});
+router.post('/addUser',(req,res,next)=>
 {
-    next(err) ;
-}
+    homeController.addUser(req,res,next) ;
+});
+router.post('/addBook',(req,res,next)=>
+{
+    homeController.addBook(req,res,next) ;
+});
+
+router.get('/dynamo',(req,res,next)=>
+{
+    homeController.dynamicPageServe(req,res,next) ;
+})
+router.get('/:id',(req,res,next)=>
+{
+    homeController.dynamicPageServe2(req,res,next) ;
+})
+
 
 // router.get('/',controllerFunction) 
 /*
