@@ -1,0 +1,79 @@
+/* 
+.form 
+    - .upper
+        - .image
+        - .inputC
+            - .input
+*/
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid black;
+
+    height: 30%;
+    width: 43%;
+    min-width: 500px;
+    min-height: 200px;
+
+    margin: 30px;
+
+            /* Blur Effect */
+            position: relative;                        /* Make it relative for absolute positioning of the pseudo-element */
+            border-radius: 10px;                      /* Rounded corners */
+            overflow: hidden;                         /* Hide the overflow */
+            z-index: 1;  
+}
+.form::before
+{
+    content: "";                               /* Required for pseudo-elements */
+    position: absolute;                        /* Position absolutely within the container */
+    top: 0;                                    /* Stretch to the top */
+    left: 0;                                   /* Stretch to the left */
+    right: 0;                                  /* Stretch to the right */
+    bottom: 0;                                 /* Stretch to the bottom */
+    background-color: rgba(187, 65, 65, 0.5); /* Optional: Slight tint */
+    background-color: inherit;
+    backdrop-filter: blur(10px);              /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);      /* Safari support */
+    z-index: -1;    
+}
+.upper
+{
+    flex-grow: 2;
+    display: flex;
+}
+.image
+{
+    flex-grow: 1;
+    max-width: 160px;
+    max-height: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    border-radius: 10px;                      /* Rounded corners */
+}
+
+.inputC
+{
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input
+{
+    display: block;
+    width: 90%;
+
+    border-radius: 10px;
+    margin: 1.4%;
+}
