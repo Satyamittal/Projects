@@ -1,20 +1,19 @@
-import { SignIn } from './components_pages/c-3-Sign_In/signIn.jsx';
-import { SignUp } from './components_pages/c-4-Sign_Up/signUp.jsx';
-import { BookCard } from './components_pages/c-5-book_card/bookCard.jsx';
-// import { Comp } from './components_pages/c-1-comp_name/comp_name.js'
-import { Notavail } from './components_pages/c-6-not_avail/notAvail.jsx';
-
 // For Routing
 import { createBrowserRouter, RouterProvider,createRoutesFromElements, Route } from 'react-router-dom';
+
+// Pages are imported
+import { PageOne } from './components_pages/p-1-sign_in/signIn.page.jsx';
+import { PageTwo } from './components_pages/p-2-Sign_up/signUp.page.jsx';
+import { PageThree } from './components_pages/p-3-buyer_page/buyer.page.jsx';
+import { PageFour } from './components_pages/p-4-Not_avail/notAvail.page.jsx';
 
 
 function App() {
 
   // 1. Defining & create router 
   const router = createBrowserRouter([
-    {path:'/',element: <SignIn></SignIn>},
-    {path:'/signUp',element: <SignUp></SignUp>},
-    {path:'/notAvailable',element: <Notavail></Notavail>}
+    {path:'/',element: <PageOne></PageOne>},
+    {path:'/signUp',element: <PageTwo></PageTwo>},
   ]);
 
 
