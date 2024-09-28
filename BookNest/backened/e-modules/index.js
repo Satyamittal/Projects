@@ -175,7 +175,7 @@ server.use(globalMiddlewares) ;
 // const midllemanArray = [local1,local2,local3]
 
 // call routes
-server.use('/index',iModules.homeRouter) ;
+server.use('/home',iModules.homeRouter) ;
 // server.use('/api/users', iModules.userRouter) ;
 
 /*
