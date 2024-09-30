@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import signIn from './signIn.module.css'
-import {Link} from 'react-router-dom'
+import {Link, Navigate} from 'react-router-dom'
 import { useState } from 'react'
 import {PageThree} from '../p-3-buyer_page/buyer.page.jsx'
 import {PageFour} from '../p-4-Not_avail/notAvail.page.jsx'
@@ -63,16 +63,16 @@ export function SignIn() {
 
   if(userExists)
   {
-    return (<> <PageThree/></> ) ;
+    return <Navigate to="/buyerPage"/>;
   }
 
   return (
     <>
-      { userExists == false ? ( <PageFour/>) : ( 
+      { userExists == false ? ( <Navigate to="/errorPage"/>) : ( 
         <div className={signIn.bcontainer}>
           <form className={signIn.container} onSubmit={handleSubmit}>
-            <input placeholder='Email'className={signIn.input} ></input> 
-            <input placeholder='Password' className={signIn.input} ></input> 
+            <input placeholder='Email'className={signIn.input} type='email' ></input> 
+            <input placeholder='Password' className={signIn.input} type='password'></input> 
             <button className={signIn.button} type='submit'>Submit</button>
             <h3 className={signIn.h3}>New User ? <Link to="/signUp">Sign Up</Link></h3>
           </form>

@@ -14,6 +14,8 @@ function App() {
   const router = createBrowserRouter([
     {path:'/',element: <PageOne></PageOne>},
     {path:'/signUp',element: <PageTwo></PageTwo>},
+    {path:'/buyerPage',element: <PageThree></PageThree>},
+    {path:'/errorPage',element: <PageFour></PageFour>},
   ]);
 
 
